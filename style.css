@@ -79,7 +79,6 @@
   .nav-container {
     flex-direction: column;
     width: 100%;
-    height: auto;
     transition: all 0.9s ease-in;
     position: fixed;
     z-index: 1;
@@ -269,7 +268,7 @@ h3 {
 .parent-container {
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,12 +279,14 @@ h3 {
 .about-title{
   display: flex;
   width: 100%;
-  height: 30%;
-  top: 10px;
+  height: 25%;
+  top: -15px;
   position: absolute;
   align-items: center;
   justify-content: center;
-
+  font-family: "Rampart One", cursive;
+  color: #424040f5;
+  letter-spacing: -1px;
 }
 .container {
   position: relative;
@@ -383,6 +384,9 @@ button.active {
   background: #fff;
 }
 @media (max-width: 800px) {
+  .about-title{
+    top:-3rem;
+  }
   .container {
     width: 50%;
     margin: auto;
@@ -408,6 +412,43 @@ button.active {
   }
 }
 
+@media (max-width: 600px) {
+  .parent-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .about-title{
+    top: -3rem;
+  }
+}
+@media (max-width: 415px){
+  h5{
+    font-size: 3vh;
+  }
+  .parent-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .about-title{
+    top: -4rem;
+  }
+}
+@media (max-width: 380px){
+  h5{
+    font-size: 3vh;
+  }
+  .parent-container{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+  }
+  .about-title{
+    top: -4.5rem;
+  }
+}
+
 /* Contact Me Style */
 
 .contact-container {
@@ -417,5 +458,3 @@ button.active {
   height: 100vh;
   background: #0aa38f;
 }
-
-
