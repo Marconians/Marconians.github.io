@@ -12,7 +12,7 @@
 .nav-container {
   display: flex;
   width: 100%;
-  height: 9vh;
+  height: auto;
   text-align: center;
   background-color: navajowhite;
   font-family: "Dela Gothic One", cursive;
@@ -52,7 +52,7 @@
 }
 .nav-link li {
   display: flex;
-  padding: 35px 4%;
+  padding: 20px 4%;
 }
 .nav-link li a {
   text-decoration: none;
@@ -61,8 +61,7 @@
   font-size: 16px;
 }
 .nav-link li a:hover {
-  color: #f700ff;
-  letter-spacing: 2px;
+  color: #0609f0;
 }
 .burger {
   display: none;
@@ -155,7 +154,7 @@ h2 {
 }
 h5,
 h6 {
-  font-size: 5vh;
+  font-size: 4.8vh;
 }
 h6 {
   font-size: 4.8vh;
@@ -276,7 +275,7 @@ h3 {
   color: black;
   background: linear-gradient(#ed4264, #ffedbc);
 }
-.about-title{
+.about-title {
   display: flex;
   width: 100%;
   height: 25%;
@@ -314,7 +313,6 @@ h3 {
   align-items: center;
   padding: 20px;
   margin: 0 10px;
-
 }
 .card-thumb {
   width: 70%;
@@ -384,8 +382,8 @@ button.active {
   background: #fff;
 }
 @media (max-width: 800px) {
-  .about-title{
-    top:-3rem;
+  .about-title {
+    top: -4rem;
   }
   .container {
     width: 50%;
@@ -395,7 +393,6 @@ button.active {
     flex-direction: column;
     height: 685px;
     margin-top: 45px;
-
   }
   #upimage {
     height: 100%;
@@ -413,39 +410,61 @@ button.active {
 }
 
 @media (max-width: 600px) {
-  .parent-container{
+  .parent-container {
     position: relative;
     width: 100%;
     height: 100vh;
   }
-  .about-title{
+  .about-title {
     top: -3rem;
   }
 }
-@media (max-width: 415px){
-  h5{
-    font-size: 3vh;
+@media (max-width: 414px) {
+  h5 {
+    font-size: 1vh;
   }
-  .parent-container{
+  .logo-size {
+    font-size: 4vh;
+  }
+  .parent-container {
     position: relative;
     width: 100%;
     height: 110vh;
   }
-  .about-title{
+  .about-title {
     top: -4rem;
   }
 }
-@media (max-width: 380px){
-  h5{
+@media (max-width: 540px) {
+  h5 {
     font-size: 3vh;
   }
-  .parent-container{
+  .logo-size {
+    font-size: 5vh;
+  }
+  .parent-container {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+  }
+  .about-title {
+    top: -4rem;
+  }
+}
+@media (max-width: 380px) {
+  h5 {
+    font-size: 3vh;
+  }
+  .logo-size {
+    font-size: 4vh;
+  }
+  .parent-container {
     position: relative;
     width: 100%;
     height: 120vh;
   }
-  .about-title{
-    top: -4.5rem;
+  .about-title {
+    top: -4rem;
   }
 }
 
