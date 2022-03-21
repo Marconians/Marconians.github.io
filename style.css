@@ -14,7 +14,7 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: navajowhite;
+  background-color: #f8ecc2;
   font-family: "Dela Gothic One", cursive;
   align-content: stretch;
   justify-content: space-around;
@@ -28,6 +28,7 @@
   display: flex;
   width: 15%;
   align-items: center;
+  justify-content: center;
   transition: 0.5s ease-in-out;
 }
 .Logo a {
@@ -37,11 +38,6 @@
   font-size: 35px;
   font-family: "Rampart One", cursive;
   letter-spacing: -3px;
-}
-.Logo a:hover {
-  color: #f700ff;
-  letter-spacing: 3px;
-  transition: 0.5s ease-in-out;
 }
 .nav-link {
   display: flex;
@@ -59,9 +55,6 @@
   color: #000000;
   font-family: "Dela Gothic One", cursive;
   font-size: 16px;
-}
-.nav-link li a:hover {
-  color: #0609f0;
 }
 .burger {
   display: none;
@@ -111,10 +104,6 @@
   }
   .nav-link ul {
     width: 100%;
-  }
-  .nav-link li a:hover {
-    color: #f700ff;
-    letter-spacing: 10px;
   }
   .nav-link.active {
     display: flex;
@@ -248,7 +237,7 @@ h3 {
   text-transform: capitalize;
   letter-spacing: 2px;
   color: #fff;
-  background-color: #4267b2;
+  background-color: #fd1100f5;
   transition: 0.3s;
   box-shadow: 5px 10px 10px rgba(1, 1, 1, 0.2);
   padding: 4px;
@@ -256,9 +245,7 @@ h3 {
   border-radius: 5px;
 }
 .a__:hover {
-  color: #f700ff;
-  background: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  box-shadow: 0 0 10px #ff7369f5, 0 0 40px #f07f77f5, 0 0 80px #d4837df5;
   border-radius: 20px;
 }
 
@@ -273,7 +260,7 @@ h3 {
   align-items: center;
   font-family: "Dosis", sans-serif;
   color: black;
-  background: linear-gradient(#ed4264, #ffedbc);
+  background: linear-gradient(#f8ecc2, #f8ecc2);
 }
 .about-title {
   display: flex;
@@ -284,7 +271,7 @@ h3 {
   align-items: center;
   justify-content: center;
   font-family: "Rampart One", cursive;
-  color: #424040f5;
+  color: #fd1100f5;
   letter-spacing: -1px;
 }
 .container {
@@ -305,14 +292,14 @@ h3 {
 .card {
   width: 800px;
   min-height: 100%;
-  background: #fff;
+  background: #faf0f0;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 .card-thumb {
   width: 70%;
@@ -371,7 +358,7 @@ img {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
   margin-left: 5px;
   transition: 0.5s;
@@ -379,7 +366,7 @@ img {
 button.active {
   width: 40px;
   border-radius: 50px;
-  background: #fff;
+  background: #fd1100f5;
 }
 @media (max-width: 800px) {
   .about-title {
