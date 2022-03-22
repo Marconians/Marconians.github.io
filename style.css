@@ -16,7 +16,8 @@ html {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #888371;
+  background: #f8ecc2;
+  border-bottom: 1px solid #000000;
   font-family: "Dela Gothic One", cursive;
   align-content: stretch;
   justify-content: space-around;
@@ -263,7 +264,7 @@ h3 {
   align-items: center;
   font-family: "Dosis", sans-serif;
   color: black;
-  background: linear-gradient(#f8ecc2, #f8ecc2);
+  background: #f8ecc2;
 }
 .about-title {
   display: flex;
@@ -464,9 +465,11 @@ button.active {
 
 .contact-container {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(#030303, #f8ecc2);
+  height: 105vh;
+  background: #f8ecc2;
   flex-direction: column;
+  border-top: 0.5px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .contact-title {
   display: flex;
@@ -504,7 +507,7 @@ button.active {
   margin: 15px;
   border: none;
   outline: none;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   background: linear-gradient(#f8ecc2, #f8ecc2);
 }
 #send {
@@ -598,5 +601,14 @@ button.active {
   .socialmed-container {
     padding-top: 20px;
   }
+}
+.thankyou{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Rampart One", cursive;
 }
 
