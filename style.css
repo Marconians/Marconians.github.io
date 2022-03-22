@@ -589,8 +589,6 @@ button.active {
   }
 }
 @media (max-width: 375px) {
-  .contact-title {
-  }
   .form {
     margin: -50px 0;
   }
@@ -601,3 +599,4 @@ button.active {
     padding-top: 20px;
   }
 }
+
