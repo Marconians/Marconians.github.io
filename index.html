@@ -30,16 +30,16 @@
         </div>
       </div>
       <ul class="nav-link">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contacts</a></li>
         <li><a href="#">Goal</a></li>
       </ul>
     </nav>
 
     <!-- Home Section -->
 
-    <section>
+    <section id="home">
       <div class="home-page">
         <h2>Hi, my name is</h2>
         <h5>Dhon Mark Managbanag Dosal.</h5>
@@ -59,7 +59,7 @@
 
     <!-- About Section -->
 
-    <div class="parent-container">
+    <div id="about" class="parent-container">
       <div class="about-title">
         <h6>
           About Me
@@ -150,7 +150,69 @@
       </div>
     </div>
 
-    <div class="contact-container"></div>
+    <!-- Contacts Section -->
+
+    <div id="contact" class="contact-container">
+      <h6 class="contact-title">
+        Contacts
+      </h6>
+      <form action="" class="form">
+        <input
+          type="text"
+          name="name"
+          class="input"
+          placeholder="Enter Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="Enter Your Email"
+        />
+        <textarea
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Enter Your Message"
+        ></textarea>
+        <input type="submit" value="SUBMIT" id="send" />
+      </form>
+      <h6 class="or">
+        OR
+      </h6>
+      <div class="socialmed-container">
+        <div class="image-contact">
+          <a
+            href="https://www.facebook.com/profile.php?id=100070539969388"
+            target="facebook-profile"
+          >
+            <img src="images/facebook.png" alt="" />
+          </a>
+        </div>
+        <div class="image-contact">
+          <a
+            href="https://www.instagram.com/dhonmark7/"
+            target="instagram-profile"
+          >
+            <img src="images/instagram.svg" alt="" />
+          </a>
+        </div>
+        <div class="image-contact">
+          <a href="https://twitter.com/dhon_mark" target="twitter-profile">
+            <img src="images/twittersvg.svg" alt="" />
+          </a>
+        </div>
+        <div class="image-contact">
+          <a
+            href="https://www.linkedin.com/in/dhon-mark-dosal-77a801222/"
+            target="linked-profile"
+          >
+            <img src="images/linkedin.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
