@@ -406,9 +406,9 @@ button.active {
     margin-left: 0;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 380px) {
   .parent-container{
-    height: auto;
+    height: 150%;
   }
 }
 @media (max-width: 600px) {
@@ -439,7 +439,7 @@ button.active {
 }
 @media (max-width: 414px) {
   h5 {
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .logo-size {
     font-size: 4vh;
@@ -447,7 +447,7 @@ button.active {
   .parent-container {
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 195vh;
   }
   .about-title {
     top: -4rem;
@@ -458,7 +458,7 @@ button.active {
 }
 @media (max-height: 400px) {
   .parent-container{
-    height: auto;
+    height: 150vh;
   }
 }
 @media (max-width: 380px) {
@@ -471,7 +471,7 @@ button.active {
   .parent-container {
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 150vh;
   }
   .about-title {
     top: -4rem;
@@ -479,7 +479,7 @@ button.active {
 }
 @media (max-height: 385px) {
   .parent-container{
-    height: auto;
+    height: 150%;
   }
 }
 
