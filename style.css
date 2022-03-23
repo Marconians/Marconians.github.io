@@ -220,10 +220,15 @@ h3 {
     font-size: 3.5vh;
   }
   h6 {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
   h3 {
     font-size: 2vh;
+  }
+}
+@media only screen and (max-width: 414px){
+  h5{
+    font-size: 10px;
   }
 }
 .click-me {
@@ -401,7 +406,11 @@ button.active {
     margin-left: 0;
   }
 }
-
+@media (max-height: 700px) {
+  .parent-container{
+    height: auto;
+  }
+}
 @media (max-width: 600px) {
   .parent-container {
     position: relative;
@@ -410,22 +419,6 @@ button.active {
   }
   .about-title {
     top: -3rem;
-  }
-}
-@media (max-width: 414px) {
-  h5 {
-    font-size: 1vh;
-  }
-  .logo-size {
-    font-size: 4vh;
-  }
-  .parent-container {
-    position: relative;
-    width: 100%;
-    height: 110vh;
-  }
-  .about-title {
-    top: -4rem;
   }
 }
 @media (max-width: 540px) {
@@ -444,6 +437,30 @@ button.active {
     top: -4rem;
   }
 }
+@media (max-width: 414px) {
+  h5 {
+    font-size: 2vh;
+  }
+  .logo-size {
+    font-size: 4vh;
+  }
+  .parent-container {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+  }
+  .about-title {
+    top: -4rem;
+  }
+  .indicators{
+    bottom: 10px;
+  }
+}
+@media (max-height: 400px) {
+  .parent-container{
+    height: auto;
+  }
+}
 @media (max-width: 380px) {
   h5 {
     font-size: 3vh;
@@ -458,6 +475,11 @@ button.active {
   }
   .about-title {
     top: -4rem;
+  }
+}
+@media (max-height: 385px) {
+  .parent-container{
+    height: auto;
   }
 }
 
@@ -564,20 +586,6 @@ button.active {
     padding-top: 40px;
   }
 }
-@media (max-width: 415px) {
-  .contact-container {
-    height: 110vh;
-  }
-  .contact-title {
-    margin-top: -90px;
-  }
-  .socialmed-container {
-    padding-top: 20px;
-  }
-  .or{
-    padding-bottom: 10px;
-  }
-}
 @media (max-width: 450px) {
   .contact-title {
     padding-top: 38%;
@@ -591,6 +599,25 @@ button.active {
     margin: 0 10px;
   }
 }
+@media (max-width: 415px) {
+  .contact-container {
+    height: 110vh;
+  }
+  .contact-title {
+    margin-top: -90px;
+  }
+  .socialmed-container {
+    padding-top: 20px;
+  }
+  .or {
+    padding-bottom: 10px;
+  }
+}
+@media (max-height: 400px) {
+  .contact-container{
+    height: auto;
+  }
+}
 @media (max-width: 375px) {
   .form {
     margin: -50px 0;
@@ -602,7 +629,12 @@ button.active {
     padding-top: 20px;
   }
 }
-.thankyou{
+@media (max-height: 385px) {
+  .contact-container{
+    height: auto;
+  }
+}
+.thankyou {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -611,4 +643,3 @@ button.active {
   font-size: 20px;
   font-family: "Rampart One", cursive;
 }
-
