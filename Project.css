@@ -1,0 +1,12 @@
+.project-container {
+  width: 100;
+  height: 100vh;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  font-family: "Rampart One", cursive;
+  color: #fd1100f5;
+  letter-spacing: -1px;
+  background: #f8ecc2;
+}
