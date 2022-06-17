@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   font-family: "Dosis", sans-serif;
-  background: #f8ecc2;
+  background: linear-gradient(to top, #b7f1f1 2%, #ccccff 100%);
+
 }
 .about-title {
   display: flex;
@@ -21,7 +22,6 @@
   align-items: center;
   justify-content: center;
   font-family: "Rampart One", cursive;
-  color: #fd1100f5;
   letter-spacing: -1px;
 }
 .container {
@@ -43,7 +43,7 @@
 .card {
   width: 800px;
   min-height: 100%;
-  background: #faf0f0;
+  background: #fff;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -126,8 +126,8 @@ img {
   background: none;
   border: none;
   outline: none;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
@@ -137,7 +137,7 @@ img {
 button.active {
   width: 40px;
   border-radius: 50px;
-  background: #fd1100f5;
+  background: #000;
 }
 @media (max-width: 800px) {
   .about-title {

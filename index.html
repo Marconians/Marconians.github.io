@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="Contacts-Page.css" />
     <link rel="stylesheet" href="AboutMe-Page.css" />
     <link rel="stylesheet" href="Project.css" />
+    <link rel="stylesheet" href="footer.css">
   </head>
   <body>
     <!-- Navigation Section -->
@@ -30,10 +31,10 @@
         </div>
       </div>
       <ul class="nav-link">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contacts</a></li>
-        <li><a href="#goal">Goal</a></li>
+        <li><a class="navLinks" href="#">Home</a></li>
+        <li><a class="navLinks" href="#about">About</a></li>
+        <li><a class="navLinks" href="#contact">Contacts</a></li>
+        <li><a class="navLinks" href="#Recentworks">Works</a></li>
       </ul>
     </nav>
 
@@ -41,15 +42,14 @@
 
     <section id="home">
       <div class="home-page">
-        <h2>Hello There, my name is</h2>
-        <h5>Dhon Mark Managbanag Dosal.</h5>
-        <h6>Welcome to my portfolio website that i created</h6>
-        <h3>Take a look around and tell me what you think.</h3>
+        <h2>Hi, my name is</h2>
+        <span class="anim_name"><h5>Dhon Mark Dosal</h5></span>
+        <h6> A UI/UX Designer, VA, and a Freelancer.</h6>
       </div>
 
       <div class="click-me">
-        <a href="/Cover&ResumeHTML.html" class="a__" target="CL&RS">
-          Cover Letter & CV
+        <a href="Cover&ResumeHTML.html" class="a__" target="CL&RS">
+           Download CV
         </a>
       </div>
     </section>
@@ -74,7 +74,7 @@
                 Dosal, I enrolled at STI College General Santos City to study
                 Information Technology. I live in General Santos City,
                 Philippines. I perform with technology in aspects such as UI/UX
-                design, Graphic design, and Front-end development.
+                design, Graphic design, and sometimes Front-end development.
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@
                   <li class="list">Adobe PS</li>
                   <li class="list">Github (Web hosting)</li>
                   <li class="list">Git (Version Control)</li>
-                  <li class="list">ReactJS Library</li>
+                  <li class="list">Canva</li>
                 </ul>
               </div>
             </div>
@@ -205,12 +205,12 @@
             href="https://www.instagram.com/dhonmark7/"
             target="instagram-profile"
           >
-            <img src="images/instagram.svg" alt="" />
+            <img src="images/insta.png" alt="" />
           </a>
         </div>
         <div class="image-contact">
           <a href="https://twitter.com/dhon_mark" target="twitter-profile">
-            <img src="images/twittersvg.svg" alt="" />
+            <img src="images/twitt.png" alt="" />
           </a>
         </div>
         <div class="image-contact">
@@ -224,12 +224,68 @@
       </div>
     </div>
 
-    <!-- Goal Section -->
+    <!-- Works Section -->
+    <h6 class="recent_title">Recent Works</h6>
+    <div id="Recentworks" class="project-container">  
+      <div class="cont">
+        <h4 id="label_h4" style="display: flex; justify-content: center;">Budz laundry Hub</h4>
+        <video controls width="620">
 
-    <div id="goal" class="project-container">
-      <h6>Goal</h6>
+          <source src="/Marconians.github.io/images/laundry.mp4"
+                  type="video/mp4">
+      
+          <source src="/Marconians.github.io/images/laundry.mp4"
+                  type="video/mp4">
+      
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+
     </div>
 
+
+    <div class="footer-basic">
+      <footer>
+        <div class="footer_icon">
+          <div class="image-contact">
+            <a
+              href="https://www.facebook.com/profile.php?id=100070539969388"
+              target="facebook-profile"
+            >
+              <img src="images/facebook.png" alt="" />
+            </a>
+          </div>
+          <div class="image-contact">
+            <a
+              href="https://www.instagram.com/dhonmark7/"
+              target="instagram-profile"
+            >
+              <img src="images/insta.png" alt="" />
+            </a>
+          </div>
+          <div class="image-contact">
+            <a href="https://twitter.com/dhon_mark" target="twitter-profile">
+              <img src="images/twitt.png" alt="" />
+            </a>
+          </div>
+          <div class="image-contact">
+            <a
+              href="https://www.linkedin.com/in/dhon-mark-dosal-77a801222/"
+              target="linked-profile"
+            >
+              <img src="images/linkedin.png" alt="" />
+            </a>
+          </div>
+        </div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Contacts</a></li>
+              <li class="list-inline-item"><a href="#">Goal</a></li>
+          </ul>
+          <p class="copyright">DHON MARK M. DOSAL © 2022</p>
+      </footer>
+  </div>
     <script src="app.js"></script>
   </body>
 </html>

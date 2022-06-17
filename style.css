@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
   padding: 0;
@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* Nav Style */
 
 .nav-container {
@@ -15,14 +16,14 @@ html {
   width: 100%;
   height: auto;
   text-align: center;
-  background: #f8ecc2;
-  border-bottom: 1px solid #000000;
+  background: #fff;
   align-content: stretch;
   justify-content: space-around;
   transition: 0.9s ease-in;
   position: fixed;
   z-index: 10;
-  transition: all 5s ease-in;
+  border-bottom: 1px solid #00000027;
+  transition: 1s ease;
   top: 0;
 }
 .Logo {
@@ -35,7 +36,6 @@ html {
 .Logo a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fd1100f5;
   font-size: 35px;
   font-family: "Rampart One", cursive;
   letter-spacing: -3px;
@@ -49,14 +49,14 @@ html {
 }
 .nav-link li {
   display: flex;
-  padding: 20px 4%;
+  padding: 20px 5px;
 }
 .nav-link li a {
   text-decoration: none;
   color: #000000;
   font-family: "Average", serif;
-  font-size: 17px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-weight: 700;
 }
 .burger {
   display: none;
@@ -67,6 +67,28 @@ html {
   height: 3px;
   background-color: #000000;
   margin: 5px;
+}
+.navLinks {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 20px;
+  color: #980799;
+}
+
+.navLinks:after {
+  content: "";
+  position: absolute;
+  background-color: #980799;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navLinks:hover:after {
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -151,6 +173,41 @@ h6 {
 }
 h3 {
   font-size: 3vh;
+}
+
+.home-page, .nav-container, .a__ {
+  animation-name: opacity;
+  animation-duration: 3s;
+}
+
+@keyframes opacity {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.anim_name {
+  animation-name: moving;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes moving {
+  0% {
+      margin-left: 0;
+  }
+  50% {
+    margin-left: 4%;
+      background-color: #ccccff;
+      color: #000000;
+  }
+  100% {
+    margin-right: 2%;
+    background-color: #ccccff;
+  }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -243,16 +300,15 @@ h3 {
   font-size: 20px;
   text-decoration: none;
   letter-spacing: 2px;
-  color: #fff;
-  background-color: #fda49e00;
-  box-shadow: 0 0 10px #755d5c, 0 0 40px #300a0af5, 0 0 80px #d4837df5;
+  color: rgb(82, 82, 82);
+  background-color: #ccccff;
   transition: 0.3s;
   padding: 10px;
   position: absolute;
   border-radius: 5px;
-  border: 0.5px solid #f8ecc2cc;
 }
 .a__:hover {
-  box-shadow: 0 0 4px 0;
+  box-shadow: 0 0 10px #bbb1b1, 0 0 40px #dad5d5f5, 0 0 80px #f8dbd9f5;
   transition: 1s;
 }
+
