@@ -1,291 +1,486 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhon Mark Dosal</title>
+    <!-- Bootstrap CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Rampart+One&display=swap"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS File and Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="Webpage icon" type="device-icon/png" href="images/device.png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Contacts-Page.css" />
-    <link rel="stylesheet" href="AboutMe-Page.css" />
-    <link rel="stylesheet" href="Project.css" />
-    <link rel="stylesheet" href="footer.css">
+    <link
+      rel="Webpage icon"
+      type="device-icon/png"
+      href="Navigation Bar/LOGO.png"
+    />
+    <title>Dhon Mark Dosal Portfolio</title>
+    <link rel="Webpage icon" type="device-icon/png" href="image/ej.jpg" />
   </head>
-  <body>
-    <!-- Navigation Section -->
 
-    <nav class="nav-container">
-      <div class="Logo">
-        <a href="#">
-          <h5 class="logo-size">Do$aL</h5>
-        </a>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+  <body>
+
+   <!-- Navigation Section --> 
+
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <h3 style="position: relative; top: 3px; left: 25px; letter-spacing: -3px; font-weight: 600;">DhonMark</h3>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="my-1 mx-2 close">X</span>
+            <span class="navbar-toggler-icon"></span>
+         </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: #18191c;">
+                  Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" style="color: #18191c;">
+                  About Me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#recentworks" style="color: #18191c;">
+                 Works
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts" style="color: #18191c;">
+                  Contacts
+                </a>
+              </li>
+  
+        
+           <button data-toggle="modal" data-target="#register_modal" type="button" class="btn .sign"><a style="text-decoration: none; color: #fff;">
+              Download CV<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16" style="margin: 0px 0px 1.5px 5px;">
+                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>
+            </a></button>
+        </div>
+            </ul>
+            </nav>
+          </div>
+
+          
+
+    <!-- Hero Banner Section-->
+
+    <div class="container" style="margin-top: 120px;">
+        <div class="row position-relative">
+          <div class="col-sm pt-5 my-3 position-relative">
+            <br />
+            <br />
+            
+            <h2 class="pt-md-5">
+                <!--
+              <span style="color: #34dcd4; font-size: 50px; font-weight: 600;">E<span style="color:#980799;">s</span>te</span>
+-->
+              <span style="color: #16123F; font-size: 45px; font-weight: 600;">Hi, I'm Dhon Mark Dosal</span>
+            </h2>
+            <p class="lead" style="color: #16123F;">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ea voluptatem facere culpa eum nisi neque vero delectus veritatis obcaecati?
+            </p>
+            
+            <button class="btn mt-3" id="button_reserve" style="position: relative; left: 0;"><a href="" class="btn_sched" style="text-decoration: none; color: #fff;">
+              Hire me!
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin: 2px 2px 4px 15px;">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a></button>
+          </div>
+          <div class="col-sm justify-content-center" style="margin-top: 15px;">
+            <img src="images/banner.png" width="700" height="700" alt="" class="img-fluid pb-5" />
+          </div>
         </div>
       </div>
-      <ul class="nav-link">
-        <li><a class="navLinks" href="#">Home</a></li>
-        <li><a class="navLinks" href="#about">About</a></li>
-        <li><a class="navLinks" href="#contact">Contacts</a></li>
-        <li><a class="navLinks" href="#Recentworks">Works</a></li>
-      </ul>
-    </nav>
+    </div>
+  
+<!-- About Me-->
 
-    <!-- Home Section -->
-
-    <section id="home">
-      <div class="home-page">
-        <h2>Hi, my name is</h2>
-        <span class="anim_name"><h5>Dhon Mark Dosal</h5></span>
-        <h6> A UI/UX Designer, VA, and a Freelancer.</h6>
-      </div>
-
-      <div class="click-me">
-        <a href="Cover&ResumeHTML.html" class="a__" target="CL&RS">
-           Download CV
-        </a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-    <div id="about" class="parent-container">
-      <div class="about-title">
-        <h6>
-          About Me
-        </h6>
-      </div>
-      <div class="container">
-        <div class="wrapper">
-          <div class="card">
-            <div class="card-thumb">
-              <img src="images/profile.jpg" alt="" />
+    <div class="container mt-5" id="about" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; margin-bottom: 100px; padding-bottom: 25px; padding-top: 45px;
+">
+        <div class="row">
+            <div class="col-sm m-5">
+                <h3 class="mt-1">
+                    About Me
+                </h3>
+                <p class="mt-5" style="font-weight: 600;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sunt?
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto quia ipsam dolor sapiente. Ad officiis obcaecati recusandae molestias. Praesentium nobis quibusdam cupiditate est, dignissimos voluptatum aliquam labore odit voluptates enim aperiam quam, molestias perspiciatis minima, repellendus sequi in placeat cumque aut magnam! Voluptatibus sed molestias atque repellendus porro inventore. 
+                </p>
             </div>
-            <div class="card-body">
-              <p id="up-intro" class="review">
-                Hi, I would like to introduce myself to you. I'm Dhon Mark
-                Dosal, I enrolled at STI College General Santos City to study
-                Information Technology. I live in General Santos City,
-                Philippines. I perform with technology in aspects such as UI/UX
-                design, Graphic design, and sometimes Front-end development.
-              </p>
+            <div class="col-sm ml-5">
+                <h3 class="mt-5">
+                    Personal Information
+                </h3>
+                <p class="mt-5">
+                   <span style="font-weight: 700; font-size: 19px;">Name:</span> &nbsp; Dhon Mark M. Dosal<br><br>
+                   <span style="font-weight: 700; font-size: 19px;">Age:</span> &nbsp; 22yr old<br><br>
+                   <span style="font-weight: 700; font-size: 19px;">Address:</span> &nbsp; Bula, General Santos City<br><br>
+                   <span style="font-weight: 700; font-size: 19px;">Email Address:</span> &nbsp; managbanagdosal@gmail.com<br><br>
+                   <span style="font-weight: 700; font-size: 19px;">Phone Number:</span> &nbsp; 09123456789<br><br>
+                </p>
+            </div>
+        </div>
+
+<!-- Skills and Accordion -->
+
+        <h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Skills
+        </h3>
+
+
+        <div class="accordion">
+          <input class="btn_accordion" type="checkbox" id="faq-1">
+          <h4 id="skill_label"><label id="label_skill" for="faq-1">Skill #1</label></h4 id="skill_label">
+          <div class="p" id="skill_par">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque corrupti libero similique optio quasi debitis laborum ullam voluptate architecto amet? </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <input class="btn_accordion" type="checkbox" id="faq-2">
+          <h4 id="skill_label"><label id="label_skill" for="faq-2">Skill #2</label></h4 id="skill_label">
+          <div class="p" id="skill_par">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident soluta voluptatum earum cum itaque reprehenderit, vel corrupti laudantium tempora laborum possimus per rendis officia qui ut aliquam!</p>
+          </div>
+        </div>
+        <div class="accordion" style="margin-bottom: 30px;">
+          <input class="btn_accordion" type="checkbox" id="faq-3">
+          <h4 id="skill_label"><label id="label_skill" for="faq-3">Skill #3</label></h4 id="skill_label">
+          <div class="p" id="skill_par">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident soluta voluptatum earum cum itaque reprehenderit, vel corrupti laudantium tempora laborum possimus perferendis officia qui ut aliquam!</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+<!-- Recent Works -->
+
+<div class="container" id="recentworks" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; margin-bottom: 100px; padding: 90px 60px;">
+  <h3 style="display: flex; justify-content: center; margin-bottom: 50px;
+  ">All Of My Works</h3>
+
+  <div class="row">
+    <div class="col-12">
+      <p class=" d-flex justify-content-center text-center mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam nobis quas architecto reprehenderit sequi! Eius adipisci fuga, nam asperiores recusandae inventore reiciendis ut nulla, voluptatibus fugit quam ex, excepturi nobis.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'workOne')">Graphic Design</button>
+        <button class="tablinks" onclick="openCity(event, 'workTwo')">UI/UX Design</button>
+        <button class="tablinks" onclick="openCity(event, 'workThree')">VA</button>
+      </div>
+      
+      <div id="workOne" class="tabcontent">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg col-sm" style="padding: 60px;">
+              <h3>Work 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero culpa officiis maiores atque quam repellat. Consectetur impedit praesentium doloribus?</p>
+            </div>
+            <div class="col-sm">
+              <img src="image/hehe.png" width="100%" alt="">
             </div>
           </div>
-
-          <div class="card">
-            <div class="card-thumb">
-              <img
-                src="images/alsome.jpg"
-                id="upimage"
-                class="client-img"
-                alt=""
-              />
+        </div>
+      </div>
+      
+      <div id="workTwo" class="tabcontent">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm" style="padding: 60px;">
+              <h3>Work 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero culpa officiis maiores atque quam repellat. Consectetur impedit praesentium doloribus?</p>
             </div>
-            <div class="card-body">
-              <p class="review">
-                In the coming years, I prefer website design to a high-paying
-                and in-demand job. I didn't love this course at first because,
-                it was chosen for me by my family, but i continued because i
-                know i can do it and have a knowledge from it. In this field,
-                you can say that you need to take time to test your knowledge,
-                perseverance, and skills. However, I must prove to myself that
-                i'm capable of doing so, and also demonstrate to others my
-                success in this field.
-              </p>
+            <div class="col-sm">
+              <img src="image/work1.png" width="100%" alt="">
             </div>
           </div>
-
-          <div class="card">
-            <div class="card-thumb">
-              <img
-                src="images/family.jpg"
-                id="upimage"
-                class="client-img"
-                alt=""
-              />
+        </div>
+      </div>
+      
+      <div id="workThree" class="tabcontent">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm" style="padding: 60px;">
+              <h3>Work 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero culpa officiis maiores atque quam repellat. Consectetur impedit praesentium doloribus?</p>
             </div>
-            <div class="card-body">
-              <p class="review">
-                Now I’m a 4th-year college. On the other hand, college did not
-                fully assist me in learning web development. As a result, I
-                chose to keep my education by taking online classes, watching
-                YouTube videos, and reading e-books. Now I've developed a solid
-                foundation in front-end development and I'm working part-time as
-                a UI/UX designer. I enjoy visual design and programming because
-                they allow me to solve problems and help me develop as a person.
-              </p>
+            <div class="col-sm">
+              <img src="image/work2.png" width="100%" alt="">
             </div>
           </div>
-          <div class="card">
-            <div class="card-thumb">
-              <img src="images/Tools.jpg" style="height: 100%;" alt="" />
-            </div>
-            <div class="card-body">
-              <div class="tool-container">
-                <h1 class="title-tool">Tools Used:</h1>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+</div>
 
-                <ul class="list-container">
-                  <li class="list">HTML</li>
-                  <li class="list">CSS</li>
-                  <li class="list">JAVASCRIPT</li>
-                  <li class="list">Figma</li>
-                  <li class="list">Adobe XD</li>
-                  <li class="list">Adobe PS</li>
-                  <li class="list">Github (Web hosting)</li>
-                  <li class="list">Git (Version Control)</li>
-                  <li class="list">Canva</li>
+<!-- Contacts-->
+
+<div class="container" id="contacts" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; margin-bottom: 100px; padding-bottom: 40px; padding-top: 50px;">
+  <h3 style="display: flex; justify-content: center; padding-top: 50px;">
+    Contacts
+  </h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form action="#">
+          <div class="form-group">
+            <label for="email">Full Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="" name="email">
+          </div>
+    
+          <div class="form-group">
+            <label for="emailaddress">Email Address:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Privacy Policy
+            </label>
+          </div>
+          <button style="position: inherit;" type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-md-5">
+        <p class="card-text text-center;" style="border: 1px solid #0000001c; margin-top: 40px;">
+          <svg style="margin: 10px 0px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          <br>
+          Mobile: 09123456789 <br>Tele: 8123-4567
+        </p>
+
+        <p class="card-text text-center;" style="margin-top: 50px; border: 1px solid #0000001c; padding: 10px 0px;">
+          <svg style="margin: 10px 0px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg><br>
+          City Heights, General Santos City
+        </p>
+        <div class="card-text text-center;" style="margin-top: 50px; border: 1px solid #0000001c; padding: 5px 0px;">
+          <svg style="margin: 10px 0px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg><br>
+          <ul style="display: flex; justify-content: center; list-style: none; margin-top:9px;">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100070539969388" class="anc">
+              <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+          </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/dhonmark7/" class="anc">
+            <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dhon_mark" class="anc">
+              <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@marconians0" class="anc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dhon-mark-dosal-77a801222/" class="anc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin ml-1" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+          </li>
+          </ul>
+          </div>
+      </div>
+
+      
+      
+  <!--
+      <div class="col-md-6 mt-5">
+        <div class="card" style="">
+          <div class="card-body">
+            <p class="card-text text-center;">Mobile: 09123456789 <br>Tele: 8123-4567</p>
+          </div>
+        </div>
+       
+          <div class="col-md">
+            <div class="card" style="margin-top: 60px;">
+              <div class="card-body">
+                <p class="card-text text-center;">City Heights, General Santos City</p>
+              </div>
+            </div>    
+          </div>
+     
+   
+          <div class="col-md">
+            <div class="card" style="margin-top: 60px;">
+              <div class="card-body text-center;">
+                <ul style="display: flex; justify-content: center; list-style: none; margin-top: 5px;">
+                  <li>
+                    <a href="" class="anc">
+                    <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                </a>
+                </li>
+                <li>
+                  <a href="" class="anc">
+                  <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+                </li>
+                <li>
+                  <a href="" class="anc">
+                    <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="anc">
+                    <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                      <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="anc">
+                    <svg id="icon_contact" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+                    </svg>
+                  </a>
+                </li>
                 </ul>
               </div>
-            </div>
+            </div>    
           </div>
-        </div>
-        <div class="indicators">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
-          <button></button>
-        </div>
+
+
       </div>
-    </div>
-
-    <!-- Contacts Section -->
-
-    <div id="contact" class="contact-container">
-      <h6 class="contact-title">
-        Contacts
-      </h6>
-      <form action="" class="form">
-        <input
-          type="text"
-          name="name"
-          class="input"
-          placeholder="Enter Your Name"
-        />
-        <input
-          type="email"
-          name="email"
-          class="input"
-          placeholder="Enter Your Email"
-        />
-        <textarea
-          name="msg"
-          id="msg"
-          cols="30"
-          rows="10"
-          placeholder="Enter Your Message"
-        ></textarea>
-        <input
-          type="submit"
-          value="SUBMIT"
-          id="send"
-          onclick="alert ('Thank You!')"
-        />
-      </form>
-      <h6 class="or">
-        OR
-      </h6>
-      <div class="socialmed-container">
-        <div class="image-contact">
-          <a
-            href="https://www.facebook.com/profile.php?id=100070539969388"
-            target="facebook-profile"
-          >
-            <img src="images/facebook.png" alt="" />
-          </a>
-        </div>
-        <div class="image-contact">
-          <a
-            href="https://www.instagram.com/dhonmark7/"
-            target="instagram-profile"
-          >
-            <img src="images/insta.png" alt="" />
-          </a>
-        </div>
-        <div class="image-contact">
-          <a href="https://twitter.com/dhon_mark" target="twitter-profile">
-            <img src="images/twitt.png" alt="" />
-          </a>
-        </div>
-        <div class="image-contact">
-          <a
-            href="https://www.linkedin.com/in/dhon-mark-dosal-77a801222/"
-            target="linked-profile"
-          >
-            <img src="images/linkedin.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Works Section -->
-    <h6 class="recent_title">Recent Works</h6>
-    <div id="Recentworks" class="project-container">  
-      <div class="cont">
-        <h4 id="label_h4" style="display: flex; justify-content: center;">Budz laundry Hub</h4>
-        <video controls width="620">
-
-          <source src="/Marconians.github.io/images/laundry.mp4"
-                  type="video/mp4">
-      
-          <source src="/Marconians.github.io/images/laundry.mp4"
-                  type="video/mp4">
-      
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-
-    </div>
+      -->
 
 
-    <div class="footer-basic">
-      <footer>
-        <div class="footer_icon">
-          <div class="image-contact">
-            <a
-              href="https://www.facebook.com/profile.php?id=100070539969388"
-              target="facebook-profile"
-            >
-              <img src="images/facebook.png" alt="" />
-            </a>
-          </div>
-          <div class="image-contact">
-            <a
-              href="https://www.instagram.com/dhonmark7/"
-              target="instagram-profile"
-            >
-              <img src="images/insta.png" alt="" />
-            </a>
-          </div>
-          <div class="image-contact">
-            <a href="https://twitter.com/dhon_mark" target="twitter-profile">
-              <img src="images/twitt.png" alt="" />
-            </a>
-          </div>
-          <div class="image-contact">
-            <a
-              href="https://www.linkedin.com/in/dhon-mark-dosal-77a801222/"
-              target="linked-profile"
-            >
-              <img src="images/linkedin.png" alt="" />
-            </a>
-          </div>
-        </div>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="#">About</a></li>
-              <li class="list-inline-item"><a href="#">Contacts</a></li>
-              <li class="list-inline-item"><a href="#">Goal</a></li>
-          </ul>
-          <p class="copyright">DHON MARK M. DOSAL © 2022</p>
-      </footer>
+    </div>  
   </div>
-    <script src="app.js"></script>
+</div>
+
+
+
+
+<!-- Footer Section -->
+
+<footer class="footer-16371">
+    <div class="container" id="footer">
+    <div class="row justify-content-center">
+    <div class="col-md-9 text-center">
+    <div class="footer-site-logo mb-4">
+    <a href="#">DhonMark.</a>
+    </div>
+    <ul class="list-unstyled nav-links mb-5">
+    <li><a href="#">About</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Recent Works</a></li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Download CV</a></li>
+    </ul>
+    <div class="social mb-4">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus repudiandae tempore est ex doloribus magni perspiciatis exercitationem voluptate iste cumque.</p>
+    <ul class="list-unstyled">
+    <li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+    <li class="fb"><a href="#"><span class="icon-facebook"></span></a></li>
+    <li class="tw"><a href="#"><span class="icon-twitter"></span></a></li>
+    <li class="pin"><a href="#"><span class="icon-pinterest"></span></a></li>
+    <li class="dr"><a href="#"><span class="icon-dribbble"></span></a></li>
+    </ul>
+    </div>
+    <div class="copyright">
+    <p class="mb-0"><small>© Dhon Mark Dosal. All Rights Reserved.</small></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+    <!-- Script menu icon -->
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+
+
