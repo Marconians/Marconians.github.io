@@ -1,21 +1,14 @@
-const burger = document.getElementsByClassName('burger')[0]
-const navbarLinks = document.getElementsByClassName('nav-link')[0]
-const links = document.querySelector(".nav-container .nav-link li a")
-
- burger.addEventListener('click', () => { 
-    navbarLinks.classList.toggle('active');
- });
-
- const wrapper = document.querySelector('.wrapper');
- const indicators = [...document.querySelectorAll('.indicators button')];
- 
- let currentTestimonial = 0; 
- 
- indicators.forEach((item, i) => {
-     item.addEventListener('click', () => {
-         indicators[currentTestimonial].classList.remove('active');
-         wrapper.style.marginLeft = `-${100 * i}%`;
-         item.classList.add('active');
-         currentTestimonial = i;
-     })
- })
+/* My Works tab content */
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
